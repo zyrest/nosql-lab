@@ -2,4 +2,5 @@ from hbase import db
 
 student = db['student']
 
-student.delete('row-key')
+one = student.row(b'2189378921739812739')
+print(one.__len__() == 0)
