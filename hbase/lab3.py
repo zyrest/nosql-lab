@@ -1,0 +1,2 @@
+from hbase import db
+

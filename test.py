@@ -1,7 +1,5 @@
+from hbase import db
 
-strs = {
-    'student': 'lalala',
-    'teacher': 'gogogo'
-}
+student = db['student']
 
-print(strs['student'])
+student.delete('row-key')
